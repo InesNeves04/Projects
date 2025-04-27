@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Base de Dados de Pinturas Famosas</h1>
+
+<table>
+  <tr>
+    <th>
+      Exposicoes
+    </th>
+    <th>
+      Artistas
+    </th>
+    <th>
+      Pinturas
+    </th>
+    <th>
+      Museus
+    </th>
+    <th>
+      Paises
+    </th>
+  </tr>
+  <tr>
+    <td>
+      {{ stats.n_exposicoes }}
+    </td>
+    <td>
+      {{ stats.n_artistas }}
+    </td>
+    <td>
+      {{ stats.n_pinturas }}
+    </td>
+    <td>
+      {{ stats.n_museus}}
+    </td>
+    <td>
+      {{ stats.n_paises }}
+    </td>
+  </tr>
+</table>
+
+
+<h3>Exposições</h3>
+<p>
+   <a href="/exposicoes">List all</a>
+</p>
+<p>Exposição info:
+<form name="exposicoes_form" action="javascript:window.open('/exposicoes/'+document.forms['exposicoes_form'].elements['id'].value,'_self')">
+   Exposição Id:<input value="TT00" name="id" type="string" min="a"/><input type="submit" value="get"/>
+</form>
+</p>
+
+<p>Procura por exposição:
+  <form name="exposicoes_asearch" action="javascript:window.open('/exposicoes/search/'+document.forms['exposicoes_asearch'].elements['expr'].value,'_self')">
+    <input name="expr" id="expr" value="Biennale" required/>
+    <input type="submit" value="search"/>
+  </form>
+</p>
+
+<h3>Artistas</h3>
+<p>
+   <a href="/artistas">List all</a>
+</p>
+
+<p>Artista info:
+<form name="artistas_form" action="javascript:window.open('/artistas/'+document.forms['artistas_form'].elements['id'].value,'_self')">
+   Artista Id:<input value="500" name="id" type="number" min="1"/><input type="submit" value="get"/>
+</form>
+</p>
+
+<p>Procura por nome:
+  <form name="artistas_asearch" action="javascript:window.open('/artistas/search/'+document.forms['artistas_asearch'].elements['expr'].value,'_self')">
+    <input name="expr" id="expr" value="John" required/>
+    <input type="submit" value="search"/>
+  </form>
+</p>
+
+<h3>Pinturas</h3>
+<p>
+   <a href="/pinturas">List all</a>
+</p>
+
+<p>Pintura info:
+<form name="pinturas_form" action="javascript:window.open('/pinturas/'+document.forms['pinturas_form'].elements['id'].value,'_self')">
+  Pintura Id:<input value="29682" name="id" type="number" min="1"/><input type="submit" value="get"/>
+</form>
+</p>
+
+
+<p>Procura por pintura:
+  <form name="pintsearch" action="javascript:window.open('/pinturas/search/'+document.forms['pintsearch'].elements['expr'].value,'_self')">
+    <input name="expr" id="expr" value="Portrait" required/>
+    <input type="submit" value="search"/>
+  </form>
+</p>
+
+
+<h3>Museus</h3>
+<p>
+   <a href="/museus">List all</a>
+</p>
+
+
+<p>Museus info:
+<form name="museus_form" action="javascript:window.open('/museus/'+document.forms['museus_form'].elements['id'].value,'_self')">
+   Museu Id:<input value="30" name="id" type="int" min="30"/><input type="submit" value="get"/>
+</form>
+</p>
+
+<p>Procura por museu:
+  <form name="msearch" action="javascript:window.open('/museus/search/'+document.forms['msearch'].elements['expr'].value,'_self')">
+    <input name="expr" id="expr" value="Museum" required/>
+    <input type="submit" value="search"/>
+  </form>
+</p>
+
+
+<h3>Paises</h3>
+<p>
+   <a href="/paises">List all</a>
+</p>
+
+<p>Países info:
+<form name="paises_form" action="javascript:window.open('/paises/'+document.forms['paises_form'].elements['id'].value,'_self')">
+   País Id:<input value="A02" name="id" type="string" min="a"/><input type="submit" value="get"/>
+</form>
+</p>
+
+<p>Procura por país:
+  <form name="psearch" action="javascript:window.open('/paises/search/'+document.forms['psearch'].elements['expr'].value,'_self')">
+    <input name="expr" id="expr" value="Argentina" required/>
+    <input type="submit" value="search"/>
+  </form>
+</p>
+
+
+{% endblock %}

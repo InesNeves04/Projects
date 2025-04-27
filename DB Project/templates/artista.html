@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{artista.nome}}</h1>
+<p>
+  <b>ArtistaId: </b>{{ artista.artista_id}}
+</p>
+<p>
+  <b>Nome: </b>{{ artista.nome }}
+</p>
+<p>
+  <b>Nacionalidade: </b>{{ artista.nacionalidade }}
+</p>
+<p>
+  <b>Ano de Nascimento: </b>{{ artista.ano_nascimento}}
+</p>
+<p>
+  <b>Ano de Óbito: </b>{{ artista.ano_obito }}
+</p>
+<p>
+  <b>Pinturas: </b>
+  <p>
+    Nota: Várias repetições do mesmo nome significam que o artista deu nome igual a pinturas diferentes.
+  </p>
+<ul>
+  {% for p in pintura %}
+  <li>
+    <a href="/pinturas/{{p.pintura_id}}">{{p.nome}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

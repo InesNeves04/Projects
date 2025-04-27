@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Museus</h1>
+
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    <th>
+      museu_id
+    </th>
+  </tr>
+  {% for m in museus %}
+  <tr>
+    <td>
+      {{ m.nome}}
+    </td>
+    <td>
+      <a href="/museus/{{ m.museu_id }}/">{{ m.museu_id}}</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}

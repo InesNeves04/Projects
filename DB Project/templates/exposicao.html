@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{exposicao.nome}}</h1>
+<p>
+  <b>ExposiçãoId: </b>{{ exposicao.exposicao_id}}
+</p>
+<p>
+  <b>Nome: </b>{{ exposicao.nome }}
+</p>
+<p>
+  <b>Ano de início: </b>{{ exposicao.ano_inicio }}
+</p>
+<p>
+  <b>Ano de fim: </b>{{ exposicao.ano_fim}}
+</p>
+<p>
+  <b>País em que ocorre: </b>
+  {% for pais in paises %}
+    <a href="/paises/{{pais[0]}}">{{pais[1]}}</a>
+  {% endfor %}
+</p>
+
+<p>
+  <b>Cidade em que ocorre: </b>{{ exposicao.cidade }}
+</p>
+<p>
+  <b>Local em que ocorre: </b>{{ exposicao.local_evento}}
+</p>
+<p>
+  <b>Artistas Expostos: </b>
+
+  {% if artistas %}
+    <ul>
+      {% for a in artistas %}
+      <li>
+      <a href="/artistas/{{a.artista_id}}">{{a.nome}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Nenhum artista em exposição.</p>
+  {% endif %}
+</p>
+
+{% endblock %}

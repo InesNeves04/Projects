@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Artistas</h1>
+
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    <th>
+      artista_id
+    </th>
+  </tr>
+  {% for a in artistas %}
+  <tr>
+    <td>
+      {{ a.nome}}
+    </td>
+    <td>
+      <a href="/artistas/{{ a.artista_id }}/">{{ a.artista_id }}</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}

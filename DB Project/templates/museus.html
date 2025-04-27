@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{museus.nome}}</h1>
+<p>
+  <b>MuseuId: </b>{{ museus.museu_id}}
+</p>
+<p>
+  <b>Nome: </b>{{ museus.nome }}
+</p>
+<p>
+  <b>Morada: </b>{{ museus.morada }}
+</p>
+<p>
+  <b>Cidade em que se localiza: </b>{{ museus.cidade }}
+</p>
+<p>
+  <b>País em que se localiza: </b>
+  {% for pais in paises %}
+    <a href="/paises/{{pais[0]}}">{{pais[1]}}</a>
+  {% endfor %}
+</p>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Pinturas</h1>
+
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    <th>
+      pintura_id
+    </th>
+  </tr>
+  {% for p in pinturas %}
+  <tr>
+    <td>
+      {{ p.nome}}
+    </td>
+    <td>
+      <a href="/pinturas/{{ p.pintura_id }}/">{{ p.pintura_id}}</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}

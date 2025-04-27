@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Paises</h1>
+
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    <th>
+      pais_id
+    </th>
+  </tr>
+  {% for p in paises %}
+  <tr>
+    <td>
+      {{ p.nome }}
+    </td>
+    <td>
+      <a href="/paises/{{ p.pais_id }}/">{{ p.pais_id }}</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% endblock %}

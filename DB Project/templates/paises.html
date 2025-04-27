@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{paises.nome}}</h1>
+<p>
+  <b>PaísId: </b>{{ paises.pais_id}}
+</p>
+<p>
+  <b>Nome: </b>{{ paises.nome }}
+</p>
+<p>
+  <b>Museus existentes no país: </b>
+  {% if museus %}
+    <ul>
+      {% for m in museus %}
+      <li>
+      <a href="/museus/{{m.museu_id}}">{{m.nome}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Nenhum museu encontrado neste país.</p>
+  {% endif %}
+</p>
+<p>
+  <b>Exposições presentes no país: </b>
+  <p>
+    Nota: Várias repetições da mesma exposição significa que foram expostas em anos diferentes.
+  </p>
+  {% if exposicoes %}
+    <ul>
+      {% for e in exposicoes %}
+      <li>
+      <a href="/exposicoes/{{e.exposicao_id}}">{{e.nome}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Nenhuma exposição encontrada neste país.</p>
+  {% endif %}
+</p>
+{% endblock %}

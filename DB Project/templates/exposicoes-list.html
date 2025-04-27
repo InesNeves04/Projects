@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Exposições</h1>
+
+<table>
+  <tr>
+    <th>
+      Nome
+    </th>
+    <th>
+      exposicao_id
+    </th>
+  </tr>
+  {% for e in exposicoes %}
+  <tr>
+    <td>
+      {{ e.nome}}
+    </td>
+    <td>
+      <a href="/exposicoes/{{ e.exposicao_id }}/">{{ e.exposicao_id}}</a>
+    </td>
+    {% endfor %}
+  </tr>
+</table>
+
+
+{% endblock %}

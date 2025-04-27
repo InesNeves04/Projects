@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{pinturas.nome}}</h1>
+<p>
+  <b>PinturaId: </b>{{ pinturas.pintura_id}}
+</p>
+
+<p>
+  <b>Nome: </b>{{ pinturas.nome }}
+</p>
+
+<p>
+    <b>Estilo: </b>{{pinturas.estilo}}
+</p>
+
+<p>
+    <b>Museu: </b>
+    {% if pinturas.museu_id %}
+        <a href="/museus/{{pinturas.museu_id}}"> {{museus[0][1]}} </a>
+    {% else %}
+        Nenhum museu associado
+    {% endif %}
+</p>
+
+    <b>Artista: </b>
+    {% for a in artistas %}
+      <a href="/artistas/{{a.artista_id}}">{{a.nome}}</a>
+    {% endfor %}
+</p>
+
+{% endblock %}
