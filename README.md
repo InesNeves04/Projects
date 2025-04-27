@@ -7,6 +7,11 @@ Project Description:
 > DB Project:
   - Databases Project: Implementation of an SQLite database populated with real-world artwork and museum data, based on a previously designed relational model. Developed a Python web application to interact with the database, featuring data browsing, search functions, and advanced queries across multiple tables.
     Libraries: SQLite3, Flask | Language: Python
+    
+> DL Project:
+  - Deep Learning Classifiers: Extraction of features from sounds and development of two neural networks, MLP and 
+CNN, with the aim of classifying them into 10 classes. 
+  Libraries: Tensorflow, Librosa | Language: Python 
 
 >ISIA Project:
   - Reinforcement Learning Agents: Development of a reinforcement learning agent using a customized OpenAI Gym environment, with modifications made to evaluate their impact on the agent’s learning process and performance.
