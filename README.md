@@ -17,5 +17,5 @@ Project Description:
     Libraries: yfinance, tensorflow | Language: Python
 
 > SP:
-  - Dataset anonymization analysis: Anonymization of a dataset using ARX deidentifier, with classification of attributes, evaluation of re-identification risks, application of multiple privacy models, and comparison of utility and privacy trade-offs.
+  - Dataset Anonymization Analysis: Anonymization of a dataset using ARX deidentifier, with classification of attributes, evaluation of re-identification risks, application of multiple privacy models, and comparison of utility and privacy trade-offs.
     Tool used: ARX Data Anonymization Tool
