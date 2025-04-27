@@ -9,7 +9,7 @@ Project Description:
     Libraries: SQLite3, Flask | Language: Python
 
 >ISIA Project:
-  - Reinforcement Learning Agents: Development of a RL agent using a customized OpenAI Gym environment, with modifications made to evaluate their impact on the agent’s learning process and performance.
+  - Reinforcement Learning Agents: Development of a reinforcement learning agent using a customized OpenAI Gym environment, with modifications made to evaluate their impact on the agent’s learning process and performance.
     Libraries: Stable Baselines, OpenAI Gym/Gymnasium, Optuna | Language: Python  
 
 > LAB_IACD:
