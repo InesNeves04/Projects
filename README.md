@@ -15,3 +15,7 @@ Project Description:
   
   - Stock Portfolio Forecasting: Predicted S&P 500 stock prices and optimized investment portfolios.
     Libraries: yfinance, tensorflow | Language: Python
+
+> SP:
+  - Dataset anonymization analysis: Anonymization of a dataset using ARX deidentifier, with classification of attributes, evaluation of re-identification risks, application of multiple privacy models, and comparison of utility and privacy trade-offs.
+    Tool used: ARX Data Anonymization Tool
