@@ -4,6 +4,10 @@ Feel free to explore our work!
 
 Project Description:
 
+> DB Project:
+  - Databases Project: Implementation of an SQLite database populated with real-world artwork and museum data, based on a previously designed relational model. Developed a Python web application to interact with the database, featuring data browsing, search functions, and advanced queries across multiple tables.
+    Libraries: SQLite3, Flask | Language: Python
+
 > LAB_IACD:
 
   - Lung Cancer Classification: Predicted malignancy of pulmonary nodules from CT images.
