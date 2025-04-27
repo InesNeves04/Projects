@@ -8,8 +8,11 @@ Project Description:
   - Databases Project: Implementation of an SQLite database populated with real-world artwork and museum data, based on a previously designed relational model. Developed a Python web application to interact with the database, featuring data browsing, search functions, and advanced queries across multiple tables.
     Libraries: SQLite3, Flask | Language: Python
 
-> LAB_IACD:
+>ISIA Project:
+  - Reinforcement Learning Agents: Development of a RL agent using a customized OpenAI Gym environment, with modifications made to evaluate their impact on the agent’s learning process and performance.
+    Libraries: Stable Baselines, OpenAI Gym/Gymnasium, Optuna | Language: Python  
 
+> LAB_IACD:
   - Lung Cancer Classification: Predicted malignancy of pulmonary nodules from CT images.
     Libraries: radiomics, pycombat | Language: Python
   
