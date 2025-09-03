@@ -1,0 +1,41 @@
+Project Instructions
+
+1. Compatible Operating Systems:
+   - Windows 10 or higher
+
+2. Required Dependencies:
+
+   This project requires Python 3.10 and the following Python modules:
+   - numpy==2.2.3
+   - opencv-python==4.11.0.86
+
+
+3. Installation Instructions:
+
+   a. Make sure Python 3.10 or higher is installed. You can download it from https://www.python.org/
+
+   b. Install dependencies the above mentioned dependencies.
+
+
+4. Running the Code:
+
+   a. Open the project in PyCharm or any Python IDE.
+
+   b. Place the `tesla_controller.py` file inside your Webots `controllers` folder (e.g. `<your_project>/controllers/tesla_controller.py`).
+
+   c. Open your Webots project and assign `tesla_controller` as the controller for your vehicle in the simulation, or just as controller <extern>.
+
+   c. Ensure that Webots is properly installed and configured, as this project uses `Driver`, `Camera`, and `Lidar` from the Webots API.
+
+   d. Run the simulation, the controller will automatically handle lane following, obstacle avoidance, and log performance metrics into a CSV file.
+
+
+5. Output:
+   - The script generates a folder named `frames/` containing visual debug images.
+   - A CSV file named `performance_metrics.csv` is created or appended to, storing time-based performance data.
+
+
+6. Notes:
+   - This project was developed and tested in PyCharm on Windows 11.
+   - The Webots simulation environment must be running for the script to work correctly.
+   - No additional GUI or user input is required once the simulation starts.
