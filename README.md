@@ -16,6 +16,10 @@ Project Description:
 CNN, with the aim of classifying them into 10 classes. 
   Libraries: Tensorflow, Librosa | Language: Python 
 
+> IR Project:
+  - Autonomous Vehicle Lane Following with Obstacle Avoidance: Developed an autonomous vehicle system in a nighttime Webots simulation environment, capable of lane following and obstacle avoidance. Utilized computer vision techniques with camera and LiDAR data to enable adaptive navigation and real-time decision-making.
+Libraries: OpenCV, Webots API | Language: Python
+
 >ISIA Project:
   - Reinforcement Learning Agents: Development of a reinforcement learning agent using a customized OpenAI Gym environment, with modifications made to evaluate their impact on the agent’s learning process and performance.
     Libraries: Stable Baselines, OpenAI Gym/Gymnasium, Optuna | Language: Python  
