@@ -1,6 +1,6 @@
-This repository contains Artificial Intelligence and Data Science projects I worked on, including machine learning models and data analysis. 
-It features real-world applications and AI solutions developed through teamwork. 
-Feel free to explore our work!
+This repository showcases Artificial Intelligence and Data Science projects I developed during my bachelor’s studies, including machine learning models and data analysis.
+It highlights practical applications and AI solutions created through collaborative teamwork.
+Feel free to explore the projects!
 
 Project Description:
 
